@@ -11,6 +11,7 @@ import de.lexuna.school.chat.io.StreamDeserializer;
 public class ChatService {
 
     public static final Map<String, ClientConnection> CONNECTION_MAP = new HashMap<>();
+    public static final Map<String, byte[]> KEY_MAP = new HashMap<>();
 
     public static void startService(int port) throws IOException {
         StreamDeserializer deSer = null;
